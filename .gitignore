@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+node_modules
+*.log
+bin/
+.vscode
+.idea
+*.xml
+!/packages/taro-router/dist/
+/packages/taro-router/dist/

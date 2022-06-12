@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "packages/taro-ui",
+    "packages/taro-router"
+  ],
+  "version": "0.0.0"
+}

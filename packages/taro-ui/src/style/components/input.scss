@@ -1,0 +1,134 @@
+@import "../variables/default.scss";
+@import "../mixins/index.scss";
+@import "../components/icon.scss";
+.ag-input {
+  position: relative;
+  padding: $spacing-v-lg 0;
+  color: $ag-input-label-color;
+  background-color: $color-bg;
+  //margin-left: $spacing-h-xl;
+  margin-bottom: 1PX;
+  @include hairline-bottom();
+  &__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: $zindex-form;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    flex: 1;
+    display: inline-block;
+    padding-right: $spacing-v-md;
+    color: $ag-input-text-color;
+    font-size: $ag-input-font-size;
+    line-height: $line-height-zh;
+    vertical-align: middle;
+    @include placeholder($ag-input-placeholder-color);
+  }
+
+  input {
+    color: $ag-input-text-color;
+    font-size: $ag-input-font-size;
+    height: $ag-input-font-size * 1.4;
+    line-height: $line-height-zh;
+  }
+
+  &__label {
+    &--required {
+      display: flex;
+      align-items: center;
+      &::before {
+        display: inline-block;
+        margin-right: 8px;
+        color: $color-error;
+        font-size: 28px;
+        font-family: SimSun, sans-serif;
+        line-height: 28px;
+        content: "*";
+      }
+    }
+  }
+
+  &__left-label {
+    font-size: $ag-input-font-size;
+    width: 180px;
+    color: $ag-input-label-color;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__top-label {
+    font-size: $ag-input-font-size;
+    color: $ag-input-label-color;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 12px;
+  }
+
+  &__placeholder {
+    font-size: 26px;
+    color: $color-grey-3;
+  }
+
+  &__clear {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 40px;
+    min-width: 40px;
+    height: 100%;
+    text-align: center;
+    line-height: 1;
+    &-close {
+      color: #ccc;
+      font-size: $ag-input-font-size;
+      margin-right: 8px;
+    }
+
+    &-alert {
+      color: #FF4949;
+    }
+  }
+
+  &__tip {
+    display: flex;
+    padding-top: 4px;
+    &-box {
+      opacity: 0;
+    }
+    &-label {
+      color: $ag-form-tip-color;
+      font-size: $ag-form-tip-font-size;
+    }
+  }
+
+  &--disabled {
+    opacity: $opacity-disabled;
+  }
+
+  &--without-border {
+    &::after {
+      border: none;
+    }
+  }
+}
