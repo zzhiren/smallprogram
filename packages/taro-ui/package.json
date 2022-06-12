@@ -29,6 +29,7 @@
   },
   "license": "MIT",
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
@@ -81,5 +82,5 @@
     "react": ">=16.13.0",
     "react-dom": ">=16.13.0"
   },
-  "gitHead": "55d18137e42c1b76520c2920986082b548c1549f"
+  "gitHead": "edac301de8b523cc6f7d2658847d3680e25ea4a4"
 }
