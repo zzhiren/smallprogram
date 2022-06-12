@@ -29,7 +29,7 @@
   },
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://registry.npm.taobao.org/"
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "dev": "yarn run dev:lib",
@@ -81,5 +81,5 @@
     "react": ">=16.13.0",
     "react-dom": ">=16.13.0"
   },
-  "gitHead": "1e72bc96b792f2e5138693b336bd2a2813ebcd7e"
+  "gitHead": "55d18137e42c1b76520c2920986082b548c1549f"
 }

@@ -32,7 +32,7 @@
     "build": "tsc"
   },
   "publishConfig": {
-    "registry": "https://registry.npm.taobao.org/"
+    "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
     "prettier": "^2.5.1",
@@ -44,5 +44,5 @@
   "dependencies": {
     "@tarojs/taro": "^3.3.17"
   },
-  "gitHead": "1e72bc96b792f2e5138693b336bd2a2813ebcd7e"
+  "gitHead": "55d18137e42c1b76520c2920986082b548c1549f"
 }
