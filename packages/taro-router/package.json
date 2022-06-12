@@ -1,6 +1,6 @@
 {
   "name": "@smallprogram/taro-router",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Taro Router",
   "keywords": [
     "agent",
@@ -44,5 +44,5 @@
   "dependencies": {
     "@tarojs/taro": "^3.3.17"
   },
-  "gitHead": "cff88a20f9f14132cda0ed2735b8520d79ce907a"
+  "gitHead": "1e72bc96b792f2e5138693b336bd2a2813ebcd7e"
 }
